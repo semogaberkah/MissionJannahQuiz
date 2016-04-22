@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_jannah">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Seandainya dunia ini di sisi Allah senilai harganya dengan sayap nyamuk niscaya Allah tidak akan memberi minum barang seteguk sekalipun kepada orang kafir"
+            android:id="@+id/textView5"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="( HR. Tirmidzi )"
+            android:id="@+id/textView6"
+            android:textColor="#fff" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#00ffffff"
+            android:layout_marginTop="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="64dp"
+                android:paddingRight="64dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:text="Play Again"
+                    android:id="@+id/btnPlay"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/play_again_but"
+                    android:textColor="#fff"
+                    android:layout_marginRight="2dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:text="Exit"
+                    android:id="@+id/btnExit"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/exit_button"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="2dp" />
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

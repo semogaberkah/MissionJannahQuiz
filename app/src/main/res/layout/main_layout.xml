@@ -1,0 +1,199 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayout"
+    android:padding="10dp"
+    android:background="@drawable/bg">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="0.5"
+            android:padding="5dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnLife1"
+                android:layout_weight="0.3"
+                android:textAllCaps="false"
+                android:background="@drawable/life" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnLife2"
+                android:layout_weight="0.3"
+                android:background="@drawable/life"
+                android:layout_marginLeft="5dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnLife3"
+                android:layout_weight="0.3"
+                android:background="@drawable/life"
+                android:layout_marginLeft="5dp" />
+        </TableRow>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarMisi"
+                android:progressDrawable="@drawable/progressbar_bg"
+                android:layout_weight="0.80" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Score"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Pertanyaan"
+            android:id="@+id/button"
+            android:background="@drawable/kategori"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:layout_weight="0.1" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/question">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="But interestingly responsive images and mobile images can be optimized in similar ways. When you’re building a native application the codes ? But interestingly responsive images and mobile images can be optimized in similar ways ?"
+                android:id="@+id/btnQuestion"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:background="#00ffffff"
+                android:textColor="#080808"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnOptionA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:text="Inayah"
+                android:textAllCaps="false"
+                android:background="@drawable/answer"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:padding="0dp" />
+            <Button
+                android:id="@+id/btnOptionB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Fikriansyah dan Milda "
+                android:textAllCaps="false"
+                android:background="@drawable/answer"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:padding="0dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnOptionC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Melin"
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:background="@drawable/answer"
+                android:textColor="#fff"
+                android:padding="0dp" />
+
+            <Button
+                android:id="@+id/btnOptionD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:text="Tiara Andini dan Rian "
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:background="@drawable/answer"
+                android:textColor="#fff"
+                android:padding="0dp" />
+
+        </TableRow>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center|center_horizontal">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarTimer"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/progressbar_bg" />
+
+    </RelativeLayout>
+
+</TableLayout>
